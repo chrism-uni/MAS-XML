@@ -8,16 +8,16 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace = "", IsNullable = false)]
+    [XmlTypeAttribute(AnonymousType = true)]
+    [XmlRootAttribute(Namespace = "", IsNullable = false)]
     public partial class mas
     {
 
-        private masS[] sField;
+        private S[] sField;
 
         /// <remarks/>
         [System.Xml.Serialization.XmlElementAttribute("s")]
-        public masS[] s
+        public S[] s
         {
             get
             {
@@ -34,16 +34,16 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masS
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class S
     {
 
-        private masSUnit unitField;
+        private Unit unitField;
 
         private string idField;
 
         /// <remarks/>
-        public masSUnit unit
+        public Unit unit
         {
             get
             {
@@ -56,7 +56,7 @@ namespace MAS_XML
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string id
         {
             get
@@ -74,8 +74,8 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masSUnit
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class Unit
     {
 
         private object[] itemsField;
@@ -83,10 +83,10 @@ namespace MAS_XML
         private string idField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("W", typeof(masSUnitW))]
-        [System.Xml.Serialization.XmlElementAttribute("ne", typeof(masSUnitNE))]
-        [System.Xml.Serialization.XmlElementAttribute("sbar", typeof(masSUnitSbar))]
-        [System.Xml.Serialization.XmlElementAttribute("ve", typeof(masSUnitVE))]
+        [XmlElementAttribute("W", typeof(W))]
+        [XmlElementAttribute("ne", typeof(NE))]
+        [XmlElementAttribute("sbar", typeof(Sbar))]
+        [XmlElementAttribute("ve", typeof(VE))]
         public object[] Items
         {
             get
@@ -100,7 +100,7 @@ namespace MAS_XML
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string id
         {
             get
@@ -118,8 +118,8 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masSUnitW
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class W
     {
 
         private string lposField;
@@ -127,7 +127,7 @@ namespace MAS_XML
         private string valueField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string Lpos
         {
             get
@@ -141,7 +141,7 @@ namespace MAS_XML
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
+        [XmlTextAttribute()]
         public string Value
         {
             get
@@ -159,17 +159,17 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masSUnitNE
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class NE
     {
 
-        private masSUnitW[] wField;
+        private W[] wField;
 
         private string idField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("W")]
-        public masSUnitW[] W
+        [XmlElementAttribute("W")]
+        public W[] W
         {
             get
             {
@@ -182,7 +182,7 @@ namespace MAS_XML
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string id
         {
             get
@@ -200,17 +200,17 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masSUnitSbar
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class Sbar
     {
         private object[] itemsField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("unit", typeof(masSUnit))]
-        [System.Xml.Serialization.XmlElementAttribute("W", typeof(masSUnitW))]
-        [System.Xml.Serialization.XmlElementAttribute("ne", typeof(masSUnitNE))]
-        [System.Xml.Serialization.XmlElementAttribute("sbar", typeof(masSUnitSbar))]
-        [System.Xml.Serialization.XmlElementAttribute("ve", typeof(masSUnitVE))]
+        [XmlElementAttribute("unit", typeof(Unit))]
+        [XmlElementAttribute("W", typeof(W))]
+        [XmlElementAttribute("ne", typeof(NE))]
+        [XmlElementAttribute("sbar", typeof(Sbar))]
+        [XmlElementAttribute("ve", typeof(VE))]
         public object[] Items
         {
             get
@@ -226,7 +226,7 @@ namespace MAS_XML
         private string idField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string id
         {
             get
@@ -244,17 +244,17 @@ namespace MAS_XML
     /// <remarks/>
     [System.SerializableAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlTypeAttribute(AnonymousType = true)]
-    public partial class masSUnitVE
+    [XmlTypeAttribute(AnonymousType = true)]
+    public partial class VE
     {
 
-        private masSUnitW[] wField;
+        private W[] wField;
 
         private string idField;
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute("W")]
-        public masSUnitW[] W
+        [XmlElementAttribute("W")]
+        public W[] W
         {
             get
             {
@@ -267,7 +267,7 @@ namespace MAS_XML
         }
 
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string id
         {
             get
@@ -281,7 +281,7 @@ namespace MAS_XML
         }
         private string gIdField;
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
+        [XmlAttributeAttribute()]
         public string gId
         {
             get
