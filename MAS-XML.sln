@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAS-XML", "MAS-XML\MAS-XML.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Debug", "Debug\Debug.csproj", "{285309D0-F09C-48CB-8FBA-8D893EA29754}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5465CA1D-307F-4FBB-BD2D-8178AE85F36A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{285309D0-F09C-48CB-8FBA-8D893EA29754}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{285309D0-F09C-48CB-8FBA-8D893EA29754}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{285309D0-F09C-48CB-8FBA-8D893EA29754}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5465CA1D-307F-4FBB-BD2D-8178AE85F36A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5465CA1D-307F-4FBB-BD2D-8178AE85F36A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5465CA1D-307F-4FBB-BD2D-8178AE85F36A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5465CA1D-307F-4FBB-BD2D-8178AE85F36A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

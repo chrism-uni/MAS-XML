@@ -38,12 +38,13 @@ namespace MAS_XML
     public partial class S
     {
 
-        private Unit unitField;
+        private Unit[] unitField;
 
         private string idField;
 
         /// <remarks/>
-        public Unit unit
+        [XmlElementAttribute("unit")]
+        public Unit[] unit
         {
             get
             {

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<mas>
+  <s id="s1">
+    <unit id="unit1">
+      <ne id="ne1">
+        <W Lpos="ne1.POS0">ne1.Word0</W>
+        <W Lpos="ne1.POS1">ne1.Word1</W>
+        <W Lpos="ne1.POS2">ne1.Word2</W>
+      </ne>
+      <ve id="ve1" gId="nv1">
+        <W Lpos="ve1.POS0">ve1.Word0</W>
+        <W Lpos="ve1.POS1">ve1.Word1</W>
+        <W Lpos="ve1.POS2">ve1.Word2</W>
+      </ve>
+      <sbar id="sbar1">
+        <W Lpos="POS5">Word7</W>
+        <unit id="unit2">
+          <ne id="ne2">
+            <W Lpos="POS6">Word7</W>
+          </ne>
+          <ve id="ve2" gId="nv2">
+          </ve>
+          <W Lpos="POS7">Word8</W>
+        </unit>
+      </sbar>
+    </unit>
+    <unit id="unit3">
+    </unit>
+  </s>
+  <s id="s2">
+    <unit id="unit4">
+      <W Lpos="POS8">Word9</W>
+    </unit>
+  </s>
+</mas>
